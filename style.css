@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body
+{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('./images/bg-intro-desktop.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%;
+    font-size: 2em;
+    margin-right: 2em;
+    color: white;
+}
+.heading
+{
+    margin-bottom: 0;
+}
+.description
+{
+    font-size: 0.6em;
+}
+.inputs-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.inputs
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.free-trial
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: hsl(248, 32%, 49%);
+    padding: 1.2em 2em;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.free{
+    margin-right: 0.2em;
+    color: white;
+    font-weight: 700;
+}
+
+input{
+    width: 100%;
+    padding: 1.5em 0;
+    border-radius: 10px;
+    text-indent: 40px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.btn
+{
+    width: 100%;
+    padding: 1.5em 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 10px;
+}
+
+.btn:hover
+{
+    background-color: hsl(154, 91%, 57%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tos{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+.tos span 
+{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+
+.tos span:hover
+{
+    color: hsl(0, 100%, 50%);
+}
+
+@media (max-width: 1030px)
+{
+    body 
+    {
+        text-align: center;
+        height: 1000px;
+        background-image: url('./images/bg-intro-mobile.png');
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .text-container
+    {
+        width: 90vw;
+        font-size: 15px;
+        text-align: center;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-container p 
+    {
+        font-size: 13px;
+    }
+    .inputs-container
+    {
+        width: 90vw;
+    }
+}
+
+.error{
+    background: url('./images/icon-error.svg') no-repeat 5px 15px;
+}
+
+.d-none
+{
+    display: none;
+}
